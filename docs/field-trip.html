@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校園野外實驗 | 折射探勘實作</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <nav class="p-6">
+        <a href="index.html" class="text-stone-500 hover:text-stone-800 transition"><i class="fas fa-arrow-left mr-2"></i> 返回主課程網頁</a>
+    </nav>
+
+    <div class="max-w-4xl mx-auto py-12 px-6">
+        <div class="text-center mb-16">
+            <span class="text-amber-600 font-bold tracking-widest uppercase text-sm">Field Experiment</span>
+            <h1 class="text-5xl font-serif font-bold mt-2">校園野外實驗：折射探勘</h1>
+            <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+                <h2 class="text-2xl font-bold mb-4 flex items-center"><i class="fas fa-bullseye mr-3 text-amber-600"></i>實驗目標</h2>
+                <ul class="space-y-3 text-lg text-stone-600 leading-relaxed">
+                    <li>• 實際佈放地震感測器 (Geophones)</li>
+                    <li>• 學習人工震源激發技術</li>
+                    <li>• 觀測地震波在校園地層中的走時曲線</li>
+                    <li>• 驗證課堂所學之折射定律與速度模型</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-stone-200">
+                <h2 class="text-xl font-bold mb-4">實驗資訊</h2>
+                <div class="space-y-4 text-sm">
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-stone-500">日期</span>
+                        <span class="font-mono font-bold">9月24日 (W3)</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-stone-500">地點</span>
+                        <span class="font-bold">指定校園空地</span>
+                    </div>
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-stone-500">裝備</span>
+                        <span class="font-bold">防曬、飲水、筆電</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Flow -->
+        <h2 class="text-2xl font-bold mb-8 text-center">實驗流程圖</h2>
+        <div class="relative border-l-2 border-stone-200 ml-4 space-y-12">
+            <div class="relative pl-8">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-amber-500"></div>
+                <h4 class="font-bold text-lg">01. 儀器校準與佈線</h4>
+                <p class="text-stone-500">測量感測器間距，確保傳輸線路暢通。</p>
+            </div>
+            <div class="relative pl-8">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-amber-500"></div>
+                <h4 class="font-bold text-lg">02. 震源激發與數據採集</h4>
+                <p class="text-stone-500">施放人工震源，並使用記錄儀擷取初至波信號。</p>
+            </div>
+            <div class="relative pl-8">
+                <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-amber-500"></div>
+                <h4 class="font-bold text-lg">03. 現場初步數據分析</h4>
+                <p class="text-stone-500">使用 ObsPy 觀察波形是否異常，確保品質。</p>
+            </div>
+        </div>
+
+        <div class="mt-20 bg-stone-800 text-white p-8 rounded-3xl text-center">
+            <h3 class="text-xl mb-4">準備好開始數據處理了嗎？</h3>
+            <p class="text-stone-400 mb-8">收集到的數據將於第五週使用 Hugging Face Space 進行分析</p>
+            <a href="https://huggingface.co/spaces/cwadayi/Geophysics_class" class="inline-block border border-white px-8 py-3 rounded-full hover:bg-white hover:text-stone-800 transition">查看開發手冊</a>
+        </div>
+    </div>
+
+</body>
+</html>
